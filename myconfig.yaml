@@ -118,17 +118,6 @@ proxy-providers:
         url: http://www.gstatic.com/generate_204
         interval: 300
         
-  Singapore:
-    type: http
-    path: ./Server/Singapore.yaml # 这里文件名称需要与订阅节点名称一样
-    url: https://sub.hthome.tk/api/v1/client/subscribe?token=f4b065ab00e89a25e51e6bedbddf1fa9 # 这里填写订阅链接
-    interval: 3600
-    filter: '新加坡'
-    health-check:
-        enable: true
-        url: http://www.gstatic.com/generate_204
-        interval: 300  
-        
   hentaihome:
     type: http
     path: ./Server/hentaihome.yaml # 这里文件名称需要与订阅节点名称一样
